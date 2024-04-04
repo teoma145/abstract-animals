@@ -1,6 +1,6 @@
 package org.astratto;
 
-public class Passerotto extends Animal{
+public class Passerotto extends Animal implements CanFly{
     public Passerotto(String animale) {
         super(animale);
     }
@@ -11,5 +11,10 @@ public class Passerotto extends Animal{
     @Override
     public void cibo() {
         System.out.println("il passerotto mangia insetti");
+    }
+
+    @Override
+    public void volo() {
+        System.out.println("sono un passerotto e posso volare");
     }
 }

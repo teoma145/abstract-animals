@@ -1,6 +1,6 @@
 package org.astratto;
 
-public class Aquila extends Cane{
+public class Aquila extends Cane implements CanFly{
     public Aquila(String animale) {
         super(animale);
     }
@@ -9,4 +9,8 @@ public class Aquila extends Cane{
         System.out.println("l'aquila fa screech");
     }
 
+    @Override
+    public void volo() {
+        System.out.println("sono un aquila e posso volare");
+    }
 }

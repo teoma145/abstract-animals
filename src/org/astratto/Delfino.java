@@ -1,6 +1,6 @@
 package org.astratto;
 
-public class Delfino extends Animal{
+public class Delfino extends Animal implements CanSwim {
     public Delfino(String animale) {
         super(animale);
     }
@@ -12,4 +12,9 @@ public class Delfino extends Animal{
     public void cibo() {
         System.out.println("il delfino mangia pesce");
     }
+    @Override
+    public void nuoto() {
+        System.out.println("sono un delfino e posso nuotare");
+    }
+
 }
