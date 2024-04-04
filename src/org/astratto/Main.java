@@ -17,7 +17,17 @@ public class Main {
         aquila.verso();
         aquila.cibo();
         aquila.volo();
-
-
+        Animal[] animals = {new Cane("cane2"), new Aquila("Aquila2"),
+                new Delfino("Delfino2"),new Passerotto("Passerotto2")};
+        for (Animal animal : animals) {
+            animal.verso();
+            animal.cibo();
+            if(animal instanceof CanFly){
+                ((CanFly) animal).volo();
+            }
+            if(animal instanceof CanSwim){
+                ((CanSwim) animal).nuoto();
+            }
+        }
     }
 }
