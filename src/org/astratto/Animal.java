@@ -2,7 +2,10 @@ package org.astratto;
 
 public abstract class Animal {
     private String animale;
-    public Animal(String animale) {
+    public Animal(String animale)throws IllegalArgumentException {
+        if (animale.isEmpty()){
+            throw new IllegalArgumentException("campo animale vuoto");
+        }
         this.animale = animale;
     }
 
