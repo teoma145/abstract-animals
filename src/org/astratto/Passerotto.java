@@ -6,10 +6,10 @@ public class Passerotto extends Animal{
     }
     @Override
     public void verso() {
-        System.out.println("cip cip");
+        System.out.println("il passerotto fa cip cip");
     }
     @Override
     public void cibo() {
-        System.out.println("insetti");
+        System.out.println("il passerotto mangia insetti");
     }
 }

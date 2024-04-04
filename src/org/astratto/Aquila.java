@@ -1,15 +1,12 @@
 package org.astratto;
 
-public class Aquila extends Animal{
+public class Aquila extends Cane{
     public Aquila(String animale) {
         super(animale);
     }
     @Override
     public void verso() {
-        System.out.println("screech");
+        System.out.println("l'aquila fa screech");
     }
-    @Override
-    public void cibo() {
-        System.out.println("carne");
-    }
+
 }

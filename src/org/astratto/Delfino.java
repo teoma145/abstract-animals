@@ -6,10 +6,10 @@ public class Delfino extends Animal{
     }
     @Override
     public void verso() {
-        System.out.println("priiiii");
+        System.out.println("il delfino fa priiiii");
     }
     @Override
     public void cibo() {
-        System.out.println("pesce");
+        System.out.println("il delfino mangia pesce");
     }
 }

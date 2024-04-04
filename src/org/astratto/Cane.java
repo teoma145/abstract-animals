@@ -6,10 +6,10 @@ public class Cane extends Animal{
     }
     @Override
     public void verso() {
-        System.out.println("bau");
+        System.out.println("il cane fa bau");
     }
     @Override
     public void cibo() {
-        System.out.println("carne");
+        System.out.println("mangia carne");
     }
 }
